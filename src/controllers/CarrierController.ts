@@ -4,8 +4,6 @@ import CarrierService from "../services/CarrierService";
 export default class CarrierController {
 
     static getCarrying(req: Request, res: Response) {
-        console.log('req:')
-        console.log(req.body);
         const MIN_ALT = 5
         const MAX_ALT = 200
         const MIN_LARG = 6
