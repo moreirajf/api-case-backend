@@ -11,12 +11,9 @@ export interface ProductDimensions {
 export default class CarrierService {
 
     async getCarrying(dimensions: ProductDimensions, callback: any) {
-        console.log(dimensions)
 
         const repo = AppDataSource.getRepository(Carrier)
         const res = await repo.find()
-        console.log("result");
-        console.log(res)
 
         let resultPayload: {}[] = []
 
@@ -35,7 +32,7 @@ export default class CarrierService {
                 )
             }
         })
-        
+        console.log(resultPayload)
         return callback(resultPayload, null);
     }
 }
