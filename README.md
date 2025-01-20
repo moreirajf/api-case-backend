@@ -17,7 +17,7 @@ $ cd api-case-backend
 
 $ docker compose up
 
-# 4. Você podrá precisar configurar permissões para o arquivo entrypoint.sh:
+# 4. Você poderá precisar configurar permissões para o arquivo entrypoint.sh:
 
 $ sudo chmod +x .docker/entrypoint.sh
 
